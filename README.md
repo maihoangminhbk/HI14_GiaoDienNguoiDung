@@ -2,8 +2,8 @@
 # Condition:
 ## Install node.js
 # Install:
-npm install
-npm start
+## npm install
+## npm start
 ## Run in: localhost:3000
 
 
