@@ -467,6 +467,11 @@ export const employeesGrid = [
     headerText: 'Mã ID',
     width: '125',
     textAlign: 'Center' },
+
+  { field: 'EmployeeKPI',
+    headerText: 'KPI',
+    width: '125',
+    textAlign: 'Center' },
 ];
 
 export const links = [
@@ -504,8 +509,13 @@ export const links = [
     ],
   },
   {
-    title: 'Apps',
+    title: 'KPI',
     links: [
+      {
+        name: 'employeesKpi',
+        icon: <IoMdContacts />,
+        title: 'KPI Nhân viên',
+      },
       {
         name: 'calendar',
         icon: <AiOutlineCalendar />,
@@ -1495,8 +1505,10 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
+    EmployeeKPI: '4/5',
     EmployeeImage:
-    avatar3,
+      avatar2,
   },
   {
     EmployeeID: 2,
@@ -1505,8 +1517,9 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
-      avatar3,
+      avatar2,
   },
   {
     EmployeeID: 3,
@@ -1515,6 +1528,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -1525,6 +1539,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1535,6 +1550,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1545,6 +1561,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1555,6 +1572,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1565,6 +1583,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
     avatar2,
 
@@ -1576,6 +1595,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar3,
   },
@@ -1586,6 +1606,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -1596,6 +1617,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1606,6 +1628,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1616,6 +1639,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1626,6 +1650,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
     avatar,
   },
@@ -1636,6 +1661,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar3,
   },
@@ -1646,6 +1672,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -1656,6 +1683,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1666,6 +1694,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1676,6 +1705,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1686,6 +1716,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
     avatar2,
 
@@ -1697,6 +1728,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar3,
   },
@@ -1707,6 +1739,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -1717,6 +1750,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1727,6 +1761,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1737,6 +1772,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1747,6 +1783,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
     avatar2,
 
@@ -1758,6 +1795,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar3,
   },
@@ -1768,6 +1806,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -1778,6 +1817,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1788,6 +1828,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1798,6 +1839,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1808,6 +1850,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
     avatar2,
 
@@ -1819,6 +1862,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar3,
   },
@@ -1829,6 +1873,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -1839,6 +1884,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1849,6 +1895,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1859,6 +1906,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1869,6 +1917,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
     avatar2,
 
@@ -1880,6 +1929,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar3,
   },
@@ -1890,6 +1940,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -1900,6 +1951,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1910,6 +1962,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1920,6 +1973,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1930,6 +1984,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1940,6 +1995,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
     avatar2,
 
@@ -1951,6 +2007,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar3,
   },
@@ -1961,6 +2018,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -1971,6 +2029,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -1981,6 +2040,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -1991,6 +2051,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -2001,6 +2062,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
     avatar2,
 
@@ -2012,6 +2074,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar3,
   },
@@ -2022,6 +2085,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar4,
   },
@@ -2032,6 +2096,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -2042,6 +2107,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar,
   },
@@ -2052,6 +2118,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
+    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
