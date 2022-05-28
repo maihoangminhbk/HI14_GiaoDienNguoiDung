@@ -140,6 +140,13 @@ const customerGridStatus = (props) => (
     <p>{props.Status}</p>
   </div>
 );
+
+// const taskGridStatus = (props) => (
+//   <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
+//     <p style={{ background: props.StatusBg }} className="rounded-full h-3 w-3" />
+//     <p>{props.Status}</p>
+//   </div>
+// );
 export const areaPrimaryXAxis = {
   valueType: 'DateTime',
   labelFormat: 'y',
@@ -491,6 +498,7 @@ export const links = [
       {
         name: 'orders',
         icon: <AiOutlineShoppingCart />,
+        title: 'Chấm công',
       },
       {
         name: 'employees',
@@ -909,6 +917,786 @@ export const ordersGrid = [
     field: 'OrderItems',
     textAlign: 'Center',
     width: '120',
+  },
+  {
+    field: 'OrderID',
+    headerText: 'ID công việc',
+    width: '120',
+    textAlign: 'Center',
+  },
+
+  {
+    field: 'Location',
+    headerText: 'Vị trí',
+    width: '150',
+    textAlign: 'Center',
+  },
+];
+
+export const checkTaskData = [
+  {
+    OrderID: 10248,
+    CustomerName: 'Vinet',
+    TotalAmount: 32.38,
+    OrderItems: 'Đổ mái',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product6,
+  },
+  {
+    OrderID: 345653,
+    CustomerName: 'Carson Darrin',
+    TotalAmount: 56.34,
+    OrderItems: 'Hàn xì',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product5,
+  },
+  {
+    OrderID: 390457,
+    CustomerName: 'Fran Perez',
+    TotalAmount: 93.31,
+    OrderItems: 'Đắp nền',
+    Location: 'New York',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product7,
+  },
+  {
+    OrderID: 893486,
+    CustomerName: 'Anika Viseer',
+    TotalAmount: 93.31,
+    OrderItems: 'Xây ngoài',
+    Location: 'Germany',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 748975,
+    CustomerName: 'Đoàn Văn Hậu',
+    TotalAmount: 23.99,
+    OrderItems: 'Làm cột',
+    Location: 'Tầng 8',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+    product1,
+  },
+  {
+    OrderID: 94757,
+    CustomerName: 'Nguyễn Quang Hải',
+    TotalAmount: 95.99,
+    OrderItems: 'Kiểm tra máiRouge',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product2,
+  },
+  {
+    OrderID: 944895,
+    CustomerName: 'Lulia albu',
+    TotalAmount: 17.99,
+    OrderItems: 'Đổ cột',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product3,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Penjani',
+    TotalAmount: 59.99,
+    OrderItems: 'Sơn nhà',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Jie Yan',
+    TotalAmount: 87.99,
+    OrderItems: 'Shoes',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+    product3,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product3,
+  },
+  {
+    OrderID: 38489,
+    CustomerName: 'Miron',
+    TotalAmount: 87.99,
+    OrderItems: 'Ice Cream',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+    product4,
+  },
+  {
+    OrderID: 24546,
+    CustomerName: 'Frank',
+    TotalAmount: 84.99,
+    OrderItems: 'Pan Cake',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+    product4,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product4,
+  },
+  {
+    OrderID: 10248,
+    CustomerName: 'Vinet',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Đổ mái',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product6,
+  },
+  {
+    OrderID: 345653,
+    CustomerName: 'Carson Darrin',
+    TotalAmount: 56.34,
+    OrderItems: 'Hàn xì',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product5,
+  },
+  {
+    OrderID: 390457,
+    CustomerName: 'Fran Perez',
+    TotalAmount: 93.31,
+    OrderItems: 'Đắp nền',
+    Location: 'New York',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product7,
+  },
+  {
+    OrderID: 893486,
+    CustomerName: 'Anika Viseer',
+    TotalAmount: 93.31,
+    OrderItems: 'Xây ngoài',
+    Location: 'Germany',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 748975,
+    CustomerName: 'Đoàn Văn Hậu',
+    TotalAmount: 23.99,
+    OrderItems: 'Làm cột',
+    Location: 'Tầng 8',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product1,
+  },
+  {
+    OrderID: 94757,
+    CustomerName: 'Nguyễn Quang Hải',
+    TotalAmount: 95.99,
+    OrderItems: 'Kiểm tra máiRouge',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product2,
+  },
+  {
+    OrderID: 944895,
+    CustomerName: 'Lulia albu',
+    TotalAmount: 17.99,
+    OrderItems: 'Đổ cột',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product3,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Penjani',
+    TotalAmount: 59.99,
+    OrderItems: 'Sơn nhà',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Jie Yan',
+    TotalAmount: 87.99,
+    OrderItems: 'Shoes',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+    product3,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product5,
+  },
+  {
+    OrderID: 38489,
+    CustomerName: 'Miron',
+    TotalAmount: 87.99,
+    OrderItems: 'Ice Cream',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+    product5,
+  },
+  {
+    OrderID: 24546,
+    CustomerName: 'Frank',
+    TotalAmount: 84.99,
+    OrderItems: 'Pan Cake',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+    product5,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product6,
+  },
+  {
+    OrderID: 10248,
+    CustomerName: 'Vinet',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Đổ mái',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product6,
+  },
+  {
+    OrderID: 345653,
+    CustomerName: 'Carson Darrin',
+    TotalAmount: 56.34,
+    OrderItems: 'Hàn xì',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product5,
+  },
+  {
+    OrderID: 390457,
+    CustomerName: 'Fran Perez',
+    TotalAmount: 93.31,
+    OrderItems: 'Đắp nền',
+    Location: 'New York',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product7,
+  },
+  {
+    OrderID: 893486,
+    CustomerName: 'Anika Viseer',
+    TotalAmount: 93.31,
+    OrderItems: 'Xây ngoài',
+    Location: 'Germany',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 748975,
+    CustomerName: 'Đoàn Văn Hậu',
+    TotalAmount: 23.99,
+    OrderItems: 'Làm cột',
+    Location: 'Tầng 8',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product1,
+  },
+  {
+    OrderID: 94757,
+    CustomerName: 'Nguyễn Quang Hải',
+    TotalAmount: 95.99,
+    OrderItems: 'Kiểm tra máiRouge',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product2,
+  },
+  {
+    OrderID: 944895,
+    CustomerName: 'Lulia albu',
+    TotalAmount: 17.99,
+    OrderItems: 'Đổ cột',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product3,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Penjani',
+    TotalAmount: 59.99,
+    OrderItems: 'Sơn nhà',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Jie Yan',
+    TotalAmount: 87.99,
+    OrderItems: 'Shoes',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+    product5,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product5,
+  },
+  {
+    OrderID: 38489,
+    CustomerName: 'Miron',
+    TotalAmount: 87.99,
+    OrderItems: 'Ice Cream',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+    product5,
+  },
+  {
+    OrderID: 24546,
+    CustomerName: 'Frank',
+    TotalAmount: 84.99,
+    OrderItems: 'Pan Cake',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+    product5,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product3,
+  },
+  {
+    OrderID: 10248,
+    CustomerName: 'Vinet',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Đổ mái',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product6,
+  },
+  {
+    OrderID: 345653,
+    CustomerName: 'Carson Darrin',
+    TotalAmount: 56.34,
+    OrderItems: 'Hàn xì',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product5,
+  },
+  {
+    OrderID: 390457,
+    CustomerName: 'Fran Perez',
+    TotalAmount: 93.31,
+    OrderItems: 'Đắp nền',
+    Location: 'New York',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product7,
+  },
+  {
+    OrderID: 893486,
+    CustomerName: 'Anika Viseer',
+    TotalAmount: 93.31,
+    OrderItems: 'Xây ngoài',
+    Location: 'Germany',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 748975,
+    CustomerName: 'Đoàn Văn Hậu',
+    TotalAmount: 23.99,
+    OrderItems: 'Làm cột',
+    Location: 'Tầng 8',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product1,
+  },
+  {
+    OrderID: 94757,
+    CustomerName: 'Nguyễn Quang Hải',
+    TotalAmount: 95.99,
+    OrderItems: 'Kiểm tra máiRouge',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product2,
+  },
+  {
+    OrderID: 944895,
+    CustomerName: 'Lulia albu',
+    TotalAmount: 17.99,
+    OrderItems: 'Đổ cột',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product3,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Penjani',
+    TotalAmount: 59.99,
+    OrderItems: 'Sơn nhà',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Jie Yan',
+    TotalAmount: 87.99,
+    OrderItems: 'Shoes',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product5,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product5,
+  },
+  {
+    OrderID: 38489,
+    CustomerName: 'Miron',
+    TotalAmount: 87.99,
+    OrderItems: 'Ice Cream',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+    product6,
+  },
+  {
+    OrderID: 24546,
+    CustomerName: 'Frank',
+    TotalAmount: 84.99,
+    OrderItems: 'Pan Cake',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+    product7,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product7,
+  },
+  {
+    OrderID: 10248,
+    CustomerName: 'Vinet',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Đổ mái',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product6,
+  },
+  {
+    OrderID: 345653,
+    CustomerName: 'Carson Darrin',
+    TotalAmount: 56.34,
+    OrderItems: 'Hàn xì',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product5,
+  },
+  {
+    OrderID: 390457,
+    CustomerName: 'Fran Perez',
+    TotalAmount: 93.31,
+    OrderItems: 'Đắp nền',
+    Location: 'New York',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product7,
+  },
+  {
+    OrderID: 893486,
+    CustomerName: 'Anika Viseer',
+    TotalAmount: 93.31,
+    OrderItems: 'Xây ngoài',
+    Location: 'Germany',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 748975,
+    CustomerName: 'Đoàn Văn Hậu',
+    TotalAmount: 23.99,
+    OrderItems: 'Làm cột',
+    Location: 'Tầng 8',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product1,
+  },
+  {
+    OrderID: 94757,
+    CustomerName: 'Nguyễn Quang Hải',
+    TotalAmount: 95.99,
+    OrderItems: 'Kiểm tra máiRouge',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      product2,
+  },
+  {
+    OrderID: 944895,
+    CustomerName: 'Lulia albu',
+    TotalAmount: 17.99,
+    OrderItems: 'Đổ cột',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+      product3,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Penjani',
+    TotalAmount: 59.99,
+    OrderItems: 'Sơn nhà',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+      product4,
+  },
+  {
+    OrderID: 845954,
+    CustomerName: 'Jie Yan',
+    TotalAmount: 87.99,
+    OrderItems: 'Shoes',
+    Location: 'Tầng 3',
+    Status: 'Hoàn thành',
+    StatusBg: '#FB9678',
+    ProductImage:
+    product1,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product1,
+  },
+  {
+    OrderID: 38489,
+    CustomerName: 'Miron',
+    TotalAmount: 87.99,
+    OrderItems: 'Ice Cream',
+    Location: 'Tầng 3',
+    Status: 'Trong tiến trình',
+    StatusBg: '#03C9D7',
+    ProductImage:
+    product2,
+  },
+  {
+    OrderID: 24546,
+    CustomerName: 'Frank',
+    TotalAmount: 84.99,
+    OrderItems: 'Pan Cake',
+    Location: 'Tầng 2',
+    Status: 'Hoàn thành',
+    StatusBg: '#8BE78B',
+    ProductImage:
+    product4,
+  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Xây nền',
+    Location: 'Tầng 3',
+    Status: 'Không Hoàn thành',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+    product5,
+  },
+];
+
+// export const cellEditorSelector: params => {
+//   return {
+//       component: 'agRichSelect',
+//       params: { values: ['Hoàn Thành', 'Không Hoàn thành', 'Trong tiến trình'] },
+//       popup: true
+//   };
+// };
+
+export const checkTaskGrid = [
+  {
+    headerText: 'Ảnh mô tả',
+    template: gridOrderImage,
+    textAlign: 'Center',
+    width: '120',
+  },
+  {
+    field: 'OrderItems',
+    headerText: 'Công việc',
+    width: '150',
+    editType: 'dropdownedit',
+    textAlign: 'Center',
+  },
+  // { field: 'CustomerName',
+  //   headerText: 'Customer Name',
+  //   width: '150',
+  //   textAlign: 'Center',
+  // },
+  {
+    field: 'TotalAmount',
+    headerText: 'Thời gian (h)',
+    // format: 'C2',
+    textAlign: 'Center',
+    editType: 'numericedit',
+    width: '150',
+  },
+  {
+    headerText: 'Tình trạng',
+    template: gridOrderStatus,
+    field: 'Status',
+    textAlign: 'Center',
+    width: '120',
+    editType: 'dropdownedit',
   },
   {
     field: 'OrderID',
@@ -2076,7 +2864,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Hàn xì',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2142,7 +2930,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Sơn nhà',
     Location: 'Tầng 3',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2186,7 +2974,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
     product4,
@@ -2220,7 +3008,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Hàn xì',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2286,7 +3074,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Sơn nhà',
     Location: 'Tầng 3',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2330,7 +3118,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
     product5,
@@ -2364,7 +3152,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Hàn xì',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2430,7 +3218,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Sơn nhà',
     Location: 'Tầng 3',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2474,7 +3262,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
     product5,
@@ -2508,7 +3296,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Hàn xì',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2574,7 +3362,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Sơn nhà',
     Location: 'Tầng 3',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2618,7 +3406,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
     product7,
@@ -2652,7 +3440,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Hàn xì',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2718,7 +3506,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Sơn nhà',
     Location: 'Tầng 3',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2762,7 +3550,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Tầng 2',
-    Status: 'hoàn thành',
+    Status: 'Hoàn thành',
     StatusBg: '#8BE78B',
     ProductImage:
     product4,
