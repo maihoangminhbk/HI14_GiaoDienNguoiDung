@@ -4,14 +4,14 @@ import { GridComponent, Inject, ColumnsDirective, ColumnDirective, Search, Page 
 import { employeesData, employeesGrid } from '../data/dummy';
 import { Header } from '../components';
 
-const Employees = () => {
+const EmployeesKPI = () => {
   const toolbarOptions = ['Search'];
 
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="Danh sách" title="Nhân viên" />
+      <Header category="App" title="KPI Nhân viên" />
       <GridComponent
         dataSource={employeesData}
         width="auto"
@@ -23,12 +23,7 @@ const Employees = () => {
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-          {employeesGrid.map((item, index) => {
-            if (item.field !== 'EmployeeKPI') {
-              return <ColumnDirective key={index} {...item} />;
-            }
-          })}
-
+          {employeesGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
         </ColumnsDirective>
         <Inject services={[Search, Page]} />
 
@@ -36,4 +31,4 @@ const Employees = () => {
     </div>
   );
 };
-export default Employees;
+export default EmployeesKPI;
