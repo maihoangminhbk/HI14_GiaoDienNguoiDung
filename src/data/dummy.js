@@ -543,7 +543,7 @@ export const links = [
     ],
   },
   {
-    title: 'Charts',
+    title: 'Biểu đồ',
     links: [
       {
         name: 'line',
@@ -3832,21 +3832,16 @@ export const scheduleData = [
 
 export const lineChartData = [
   [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
+    { x: new Date(2005, 0, 1), y: 36 },
+    { x: new Date(2006, 0, 1), y: 57 },
+    { x: new Date(2007, 0, 1), y: 76 },
+    { x: new Date(2008, 0, 1), y: 100 },
+
   ],
   [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
+    { x: new Date(2008, 0, 1), y: 17 },
+    { x: new Date(2009, 0, 1), y: 38 },
+    { x: new Date(2010, 0, 1), y: 68 },
     { x: new Date(2011, 0, 1), y: 84 },
   ],
 
@@ -3886,7 +3881,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Finished',
+    name: 'Dự án 1',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3894,7 +3889,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Unfinished',
+    name: 'Dự án 2',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3947,22 +3942,22 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jan', y: 111 },
+    { x: 'Feb', y: 127 },
+    { x: 'Mar', y: 143 },
+    { x: 'Apr', y: 159 },
+    { x: 'May', y: 200 },
+    { x: 'Jun', y: 303 },
+    { x: 'July', y: 245 },
   ],
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jan', y: 30 },
+    { x: 'Feb', y: 50 },
+    { x: 'Mar', y: 102 },
+    { x: 'Apr', y: 70 },
+    { x: 'May', y: 65 },
+    { x: 'Jun', y: 45 },
+    { x: 'July', y: 74 },
   ],
 ];
 
@@ -3971,7 +3966,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'finished',
+    name: 'Đã hoàn thành',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3980,7 +3975,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'unfinished',
+    name: 'Chưa hoàn thành',
     type: 'StackingColumn',
     background: 'red',
 
