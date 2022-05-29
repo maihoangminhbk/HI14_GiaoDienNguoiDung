@@ -65,8 +65,8 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
+                <Route path="/" element={(<TasksCreate />)} />
+                {/* <Route path="/ecommerce" element={(<Ecommerce />)} /> */}
 
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />
@@ -76,10 +76,10 @@ const App = () => {
 
                 {/* apps  */}
                 <Route path="/employeesKpi" element={<EmployeesKPI />} />
-                <Route path="/kanban" element={<Kanban />} />
-                <Route path="/editor" element={<Editor />} />
-                <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
+                {/* <Route path="/kanban" element={<Kanban />} /> */}
+                {/* <Route path="/editor" element={<Editor />} /> */}
+                {/* <Route path="/calendar" element={<Calendar />} /> */}
+                {/* <Route path="/color-picker" element={<ColorPicker />} /> */}
 
                 {/* charts  */}
                 <Route path="/line" element={<Line />} />

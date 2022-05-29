@@ -12,7 +12,7 @@ const UserProfile = () => {
   return (
     <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
       <div className="flex justify-between items-center">
-        <p className="font-semibold text-lg dark:text-gray-200">User Profile</p>
+        <p className="font-semibold text-lg dark:text-gray-200">Thông tin của tôi</p>
         <Button
           icon={<MdOutlineCancel />}
           color="rgb(153, 171, 180)"
@@ -30,7 +30,7 @@ const UserProfile = () => {
         <div>
           <p className="font-semibold text-xl dark:text-gray-200"> Mai Hoàng Minh </p>
           <p className="text-gray-500 text-sm dark:text-gray-400">  Quản lí   </p>
-          <p className="text-gray-500 text-sm font-semibold dark:text-gray-400"> https://www.facebook.com/MHMHACKER/ </p>
+          {/* <p className="text-gray-500 text-sm font-semibold dark:text-gray-400"> https://www.facebook.com </p> */}
         </div>
       </div>
       <div>
@@ -55,7 +55,7 @@ const UserProfile = () => {
         <Button
           color="white"
           bgColor={currentColor}
-          text="Logout"
+          text="Đăng xuất"
           borderRadius="10px"
           width="full"
         />

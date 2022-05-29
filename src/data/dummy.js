@@ -482,18 +482,18 @@ export const employeesGrid = [
 ];
 
 export const links = [
-  {
-    title: 'Dashboard',
-    links: [
-      {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
-      },
-    ],
-  },
+  // {
+  //   title: 'Dashboard',
+  //   links: [
+  //     {
+  //       name: 'ecommerce',
+  //       icon: <FiShoppingBag />,
+  //     },
+  //   ],
+  // },
 
   {
-    title: 'Pages',
+    title: 'Quản lý công việc',
     links: [
       {
         name: 'task',
@@ -517,29 +517,29 @@ export const links = [
     ],
   },
   {
-    title: 'KPI',
+    title: 'Quản lý KPI',
     links: [
       {
         name: 'employeesKpi',
         icon: <IoMdContacts />,
         title: 'KPI Nhân viên',
       },
-      {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
+      // {
+      //   name: 'calendar',
+      //   icon: <AiOutlineCalendar />,
+      // },
+      // {
+      //   name: 'kanban',
+      //   icon: <BsKanban />,
+      // },
+      // {
+      //   name: 'editor',
+      //   icon: <FiEdit />,
+      // },
+      // {
+      //   name: 'color-picker',
+      //   icon: <BiColorFill />,
+      // },
     ],
   },
   {
@@ -548,6 +548,7 @@ export const links = [
       {
         name: 'line',
         icon: <AiOutlineStock />,
+        title: 'Biểu đồ tiến độ'
       },
       /*{
         name: 'area',
@@ -577,6 +578,7 @@ export const links = [
       {
         name: 'stacked',
         icon: <AiOutlineBarChart />,
+        title: 'Biểu đồ công việc'
       },
     ],
   },
@@ -610,29 +612,29 @@ export const chatData = [
   {
     image:
       avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
+    message: 'Thiên vừa tham gia vào đội!',
+    desc: 'Chúc mừng anh Thiên',
     time: '9:08 AM',
   },
   {
     image:
       avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
+    message: 'Trường vừa giao nhiệm vụ cho bạn',
+    desc: 'Vào nhận nhiệm vụ',
     time: '11:56 AM',
   },
-  {
-    image:
-      avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
-    time: '4:39 AM',
-  },
+  // {
+  //   image:
+  //     avatar4,
+  //   message: 'New Payment received',
+  //   desc: 'Check your earnings',
+  //   time: '4:39 AM',
+  // },
   {
     image:
       avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
+    message: 'Ngọc vừa hoàn thành nhiệm vụ 123',
+    desc: 'Giao nhiệm vụ mới cho Ngọc',
     time: '1:12 AM',
   },
 ];
@@ -873,22 +875,22 @@ export const themeColors = [
 export const userProfileData = [
   {
     icon: <BsCurrencyDollar />,
-    title: 'My Profile',
-    desc: 'Account Settings',
+    title: 'Thông tin của tôi',
+    desc: 'Cài đặt tài khoản',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
   },
-  {
-    icon: <BsShield />,
-    title: 'My Inbox',
-    desc: 'Messages & Emails',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
-  },
+  // {
+  //   icon: <BsShield />,
+  //   title: 'My Inbox',
+  //   desc: 'Messages & Emails',
+  //   iconColor: 'rgb(0, 194, 146)',
+  //   iconBg: 'rgb(235, 250, 242)',
+  // },
   {
     icon: <FiCreditCard />,
-    title: 'My Tasks',
-    desc: 'To-do and Daily Tasks',
+    title: 'Nhiệm vụ của tôi',
+    desc: 'Nhiệm vụ của tôi',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
   },

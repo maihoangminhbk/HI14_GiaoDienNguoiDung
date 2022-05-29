@@ -11,7 +11,7 @@ const EmployeesKPI = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="App" title="KPI Nhân viên" />
+      <Header category="KPI" title="KPI Nhân viên" />
       <GridComponent
         dataSource={employeesData}
         width="auto"
