@@ -549,7 +549,7 @@ export const links = [
         name: 'line',
         icon: <AiOutlineStock />,
       },
-      {
+      /*{
         name: 'area',
         icon: <AiOutlineAreaChart />,
       },
@@ -573,7 +573,7 @@ export const links = [
       {
         name: 'pyramid',
         icon: <GiLouvrePyramid />,
-      },
+      },*/
       {
         name: 'stacked',
         icon: <AiOutlineBarChart />,
@@ -3886,7 +3886,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Finished',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3894,18 +3894,18 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Unfinished',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
 
-  { dataSource: lineChartData[2],
+/*  { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
     name: 'India',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line' },*/
 
 ];
 
@@ -3971,7 +3971,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'finished',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3980,7 +3980,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'unfinished',
     type: 'StackingColumn',
     background: 'red',
 
