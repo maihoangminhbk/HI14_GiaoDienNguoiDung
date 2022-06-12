@@ -1,0 +1,38 @@
+
+.work-card {
+    display: flex;
+    background: #ffffff;
+    width: 90%;
+    min-height: 250px; 
+    margin: 10px auto;
+    border: #f7b19b solid 3px;
+    border-radius: 8px;
+}
+.work-img {
+    width: 35%;
+    height: 100%;
+    padding: 5px;
+}
+.work-info {
+    margin-top: 25px;
+}
+.showAll {
+    margin: 0 0 10px 45px;
+    background: #FB9678;
+    width: 200px;
+    height: 35px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.work-img img {
+    margin: 15px auto;
+}
+.cham-cong {
+    width: 150px;
+    height: 35px;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 15px;
+}

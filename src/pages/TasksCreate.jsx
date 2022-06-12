@@ -7,6 +7,7 @@ import { Button } from 'react-bootstrap';
 import { CreateWork } from '../components';
 const TasksCreate = () => {
   const editing = { allowDeleting: true, allowEditing: true };
+  // const [showAll, setShowAll] = useState(false);
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
       <Header category="Danh sách" title="Công việc đã tạo" />
