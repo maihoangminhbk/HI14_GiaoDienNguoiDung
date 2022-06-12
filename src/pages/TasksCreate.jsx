@@ -3,12 +3,16 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, Context
 
 import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
 import { Header } from '../components';
-
+import { Button } from 'react-bootstrap';
+import { CreateWork } from '../components';
 const TasksCreate = () => {
   const editing = { allowDeleting: true, allowEditing: true };
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
       <Header category="Danh sách" title="Công việc đã tạo" />
+      {<div>
+      <p>Thêm công việc: <CreateWork /> </p>
+      </div>}
       <GridComponent
         id="gridcomp"
         dataSource={ordersData}
