@@ -31,7 +31,7 @@ const InputWork = () => {
     <div className="mt-5 ">
           <div className="group">
             <label>Công việc:</label>
-            <input type="text" className="input" value=" ..."/><p/>
+            <input type="text" className="input" /><p/>
           </div>
           <div className="group">
             <label>Ảnh: </label>
@@ -39,11 +39,11 @@ const InputWork = () => {
           </div>
           <div className="group">
             <label>Thời gian: </label>
-            <input type="text" className="input" value=" ..."/><p/>
+            <input type="text" className="input" /><p/>
           </div>
           <div className="group">
             <label>Vị trí: </label>
-            <input type="text" className="input" value=" ..."/><p/>
+            <input type="text" className="input" /><p/>
           </div>
           <div className="group">
             <label>Nhân viên: </label>
