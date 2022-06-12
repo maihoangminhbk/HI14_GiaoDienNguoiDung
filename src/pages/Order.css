@@ -1,3 +1,4 @@
+
 .work-card {
     display: flex;
     background: #ffffff;
@@ -27,4 +28,11 @@
 }
 .work-img img {
     margin: 15px auto;
+}
+.cham-cong {
+    width: 150px;
+    height: 35px;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 15px;
 }
