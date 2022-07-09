@@ -16,6 +16,7 @@ export const ContextProvider = ({ children }) => {
   const [themeSettings, setThemeSettings] = useState(false);
   const [activeMenu, setActiveMenu] = useState(true);
   const [isClicked, setIsClicked] = useState(initialState);
+  const [userContext, setUser] = useState('');
 
   const setMode = (e) => {
     setCurrentMode(e.target.value);
@@ -27,11 +28,16 @@ export const ContextProvider = ({ children }) => {
     localStorage.setItem('colorMode', color);
   };
 
+  const setRole = (role) => {
+    setUser(role);
+    localStorage.setItem('role', role);
+  };
+
   const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <StateContext.Provider value={{ currentColor, currentMode, activeMenu, screenSize, setScreenSize, handleClick, isClicked, initialState, setIsClicked, setActiveMenu, setCurrentColor, setCurrentMode, setMode, setColor, themeSettings, setThemeSettings }}>
+    <StateContext.Provider value={{ currentColor, currentMode, activeMenu, screenSize, userContext, setScreenSize, handleClick, isClicked, initialState, setIsClicked, setActiveMenu, setCurrentColor, setCurrentMode, setMode, setColor, themeSettings, setThemeSettings, setRole }}>
       {children}
     </StateContext.Provider>
   );

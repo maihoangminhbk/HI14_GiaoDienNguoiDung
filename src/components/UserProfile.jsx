@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 import { Button } from '.';
 import { userProfileData } from '../data/dummy';
@@ -52,13 +53,14 @@ const UserProfile = () => {
         ))}
       </div>
       <div className="mt-5">
-        <Button
+        {/* <Button
           color="white"
           bgColor={currentColor}
           text="Đăng xuất"
           borderRadius="10px"
           width="full"
-        />
+        /> */}
+        <Link to="auth">Đăng xuất</Link>
       </div>
     </div>
 

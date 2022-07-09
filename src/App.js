@@ -10,7 +10,7 @@ import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings, userContext } = useStateContext();
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
@@ -25,7 +25,8 @@ const App = () => {
 
   return (
     <div>
-      { !user && <Auth setUser={setUser} /> }
+      { console.log(user) }
+      { !user && <Auth user={user} setUser={setUser} /> }
       { user && (
       <div className={currentMode === 'Dark' ? 'dark' : ''}>
         <BrowserRouter>
@@ -69,11 +70,14 @@ const App = () => {
                 {themeSettings && (<ThemeSettings />)}
 
                 <Routes>
-                  {/* dashboard  */}
-                  <Route path="/" element={(<TasksCreate />)} />
-                  {/* <Route path="/ecommerce" element={(<Ecommerce />)} /> */}
-
+                  <Route path="/auth" element={<Auth user={user} setUser={setUser} />} />
+                  {/* <Route path="/" element={(<Orders />)} /> */}
+                  { (userContext !== 'manager')
+                    && <Route path="/" element={(<Orders />)} />}
+                  { (userContext === 'manager')
+                    && <Route path="/" element={(<TasksCreate />)} />}
                   {/* pages  */}
+                  {console.log(userContext)}
                   <Route path="/orders" element={<Orders />} />
                   <Route path="/task" element={<TasksCreate />} />
                   <Route path="/employees" element={<Employees />} />

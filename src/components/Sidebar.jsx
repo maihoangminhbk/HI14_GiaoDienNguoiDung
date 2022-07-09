@@ -1,14 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { links } from '../data/dummy';
+import { links, manageLinks, employeeLinks } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
-  const { currentColor, activeMenu, setActiveMenu, screenSize } = useStateContext();
+  const { currentColor, activeMenu, setActiveMenu, screenSize, userContext } = useStateContext();
+  // const [sideBarLink, setSideBarLink] = useState(links);
+  let sideBarLink = links;
+
+  switch (userContext) {
+    case 'manager':
+      // setSideBarLink(manageLinks);
+      sideBarLink = manageLinks;
+      break;
+
+    case 'employee':
+      // setSideBarLink(employeeLinks);
+      sideBarLink = employeeLinks;
+      break;
+
+    case 'managerEmployee':
+      // setSideBarLink(links);
+      sideBarLink = links;
+      break;
+
+    default:
+      break;
+  }
 
   const handleCloseSideBar = () => {
     if (activeMenu !== undefined && screenSize <= 900) {
@@ -39,7 +61,7 @@ const Sidebar = () => {
             </TooltipComponent>
           </div>
           <div className="mt-10 ">
-            {links.map((item) => (
+            {sideBarLink.map((item) => (
               <div key={item.title}>
                 <p className="text-gray-400 dark:text-gray-400 m-3 mt-4 uppercase">
                   {item.title}

@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
+// import { useHistory } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { Form, Button } from 'react-bootstrap';
 // import { selectAllInlineText } from 'utilities/contentEditable';
 // import { FaGoogle } from 'react-icons/fa';
-
+import { useStateContext } from '../contexts/ContextProvider';
 // import { GoogleLogin } from 'react-google-login';
 import Camera from './Camera';
 import './Auth.scss';
 
+
 // const initialState = { name: '', username: '', password: '', confirmPassword: '' };
 
-const Auth = ({ setUser }) => {
+const Auth = ({ user, setUser }) => {
+  const { setRole } = useStateContext();
   const [name, setName] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -23,19 +27,28 @@ const Auth = ({ setUser }) => {
   const switchSignUp = () => {
     setIsSignUp(!isSignUp);
   };
-
+  
+  if (user === true) {
+    setUser(false);
+  }
   const handleSubmitForm = (e) => {
+    
     e.preventDefault();
     console.log('username', username);
-    console.log('password', password);
-    setUser(username);
+    if (username === 'admin@gmail.com') {
+      setRole('manager');
+    } else {
+      setRole('managerEmployee');
+    }
+    setUser(true);
+    // navigate('/test');
   };
 
   const handleSubmitCamera = (e) => {
-    e.preventDefault();
-    console.log('username', username);
-    console.log('password', password);
-    setUser('congnhan');
+    
+    setRole('employee');
+    setUser(true);
+    // navigate('/test2');
   };
 
   // const googleSuccess = async (res) => {

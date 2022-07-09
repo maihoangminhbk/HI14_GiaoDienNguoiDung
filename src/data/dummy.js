@@ -481,6 +481,131 @@ export const employeesGrid = [
     textAlign: 'Center' },
 ];
 
+export const manageLinks = [
+  // {
+  //   title: 'Dashboard',
+  //   links: [
+  //     {
+  //       name: 'ecommerce',
+  //       icon: <FiShoppingBag />,
+  //     },
+  //   ],
+  // },
+
+  {
+    title: 'Quản lý công việc',
+    links: [
+      {
+        name: 'task',
+        icon: <FiShoppingBag />,
+        title: 'Công việc đã tạo',
+      },
+      {
+        name: 'employees',
+        icon: <IoMdContacts />,
+        title: 'Nhân viên',
+      },
+      // {
+      //   name: 'customers',
+      //   icon: <RiContactsLine />,
+      // },
+    ],
+  },
+  {
+    title: 'Quản lý KPI',
+    links: [
+      {
+        name: 'employeesKpi',
+        icon: <IoMdContacts />,
+        title: 'KPI Nhân viên',
+      },
+      // {
+      //   name: 'calendar',
+      //   icon: <AiOutlineCalendar />,
+      // },
+      // {
+      //   name: 'kanban',
+      //   icon: <BsKanban />,
+      // },
+      // {
+      //   name: 'editor',
+      //   icon: <FiEdit />,
+      // },
+      // {
+      //   name: 'color-picker',
+      //   icon: <BiColorFill />,
+      // },
+    ],
+  },
+  {
+    title: 'Biểu đồ',
+    links: [
+      {
+        name: 'line',
+        icon: <AiOutlineStock />,
+        title: 'Biểu đồ tiến độ',
+      },
+      /* {
+        name: 'area',
+        icon: <AiOutlineAreaChart />,
+      },
+
+      {
+        name: 'bar',
+        icon: <AiOutlineBarChart />,
+      },
+      {
+        name: 'pie',
+        icon: <FiPieChart />,
+      },
+      {
+        name: 'financial',
+        icon: <RiStockLine />,
+      },
+      {
+        name: 'color-mapping',
+        icon: <BsBarChart />,
+      },
+      {
+        name: 'pyramid',
+        icon: <GiLouvrePyramid />,
+      }, */
+      {
+        name: 'stacked',
+        icon: <AiOutlineBarChart />,
+        title: 'Biểu đồ công việc',
+      },
+    ],
+  },
+];
+
+export const employeeLinks = [
+  // {
+  //   title: 'Dashboard',
+  //   links: [
+  //     {
+  //       name: 'ecommerce',
+  //       icon: <FiShoppingBag />,
+  //     },
+  //   ],
+  // },
+
+  {
+    title: 'Quản lý công việc',
+    links: [
+      {
+        name: 'orders',
+        icon: <AiOutlineShoppingCart />,
+        title: 'Chấm công',
+      },
+      // {
+      //   name: 'customers',
+      //   icon: <RiContactsLine />,
+      // },
+    ],
+  },
+];
+
 export const links = [
   // {
   //   title: 'Dashboard',
@@ -540,46 +665,6 @@ export const links = [
       //   name: 'color-picker',
       //   icon: <BiColorFill />,
       // },
-    ],
-  },
-  {
-    title: 'Biểu đồ',
-    links: [
-      {
-        name: 'line',
-        icon: <AiOutlineStock />,
-        title: 'Biểu đồ tiến độ'
-      },
-      /*{
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },*/
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-        title: 'Biểu đồ công việc'
-      },
     ],
   },
 ];
@@ -2296,7 +2381,6 @@ export const employeesData = [
     Country: 'Thái Bình',
     ReportsTo: 'Carson',
     EmployeeKPI: '4/5',
-    EmployeeKPI: '4/5',
     EmployeeImage:
       avatar2,
   },
@@ -3896,13 +3980,13 @@ export const lineCustomSeries = [
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
 
-/*  { dataSource: lineChartData[2],
+  /*  { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
     name: 'India',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },*/
+    type: 'Line' }, */
 
 ];
 
