@@ -11,13 +11,13 @@ import { itemsToOrder } from '@syncfusion/ej2/treemap';
 const InputWork = () => {
   const { currentColor } = useStateContext();
   const nhanvien = [
-    {  label: 'Nguyễn Văn Toàn' },
-    {  label: 'Nguyễn Công Phượng' },
-    {  label: 'Nguyễn Phong Hồng Duy' },
-    {  label: 'Trần Minh Vương' },
-    {  label: 'Nguyễn Quang Hải' },
-    {  label: 'Vũ Văn Thanh' },
-    {  label: 'Đoàn Văn Hậu' }
+    {  label: 'Nguyễn Văn Toàn', value: 'Nguyễn Văn Toàn' },
+    {  label: 'Nguyễn Công Phượng', value: 'Nguyễn Công Phượng' },
+    {  label: 'Nguyễn Phong Hồng Duy', value: 'Nguyễn Phong Hồng Duy' },
+    {  label: 'Trần Minh Vương', value: 'Trần Minh Vương' },
+    {  label: 'Nguyễn Quang Hải' , value:  'Nguyễn Quang Hải' },
+    {  label: 'Vũ Văn Thanh', value: 'Vũ Văn Thanh' },
+    {  label: 'Đoàn Văn Hậu', value: 'Đoàn Văn Hậu' }
   ]
   return (
     <div className=" md:right-40 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
@@ -53,7 +53,7 @@ const InputWork = () => {
             
             ))}
             </select>*/}
-            <Select options= {nhanvien} />
+            <Select isMulti options= {nhanvien} />
           </div>
       <div className="mt-5">
         <Button color="white" bgColor={currentColor} text="Xác nhận" borderRadius="10px" width="full" />
