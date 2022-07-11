@@ -1,11 +1,11 @@
 
 import { MdOutlineCancel } from 'react-icons/md';
 import React, { useEffect } from 'react';
-import { RiNewspaperLine } from 'react-icons/ri';
+import { RiNewspaperLine, RiPagesLine } from 'react-icons/ri';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { useStateContext } from '../contexts/ContextProvider';
-import {InputWork} from '.';
+import {InputReport} from '.';
 
 const NavButton = ({ title, customFunc, icon, color }) => (
   <TooltipComponent content={title} position="BottomCenter">
@@ -20,7 +20,7 @@ const NavButton = ({ title, customFunc, icon, color }) => (
   </TooltipComponent>
 );
 
-const CreateWork = () => {
+const CreateReport = () => {
   const { currentColor, activeMenu, setActiveMenu, handleClick, isClicked, setScreenSize, screenSize } = useStateContext();
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -46,12 +46,12 @@ const CreateWork = () => {
   return (
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
       <div className="flex">
-      <NavButton title="Tạo công việc"  customFunc={() => handleClick('inputWork')} color={currentColor} icon={<RiNewspaperLine />}/>
-      {isClicked.inputWork && <InputWork />}
+      <NavButton title="Tạo báo cáo"  customFunc={() => handleClick('inputReport')} color={currentColor} icon={<RiPagesLine />}/>
+      {isClicked.inputReport && <InputReport />}
       </div>
     </div>
 
   );
 };
 
-export default CreateWork;
+export default CreateReport;
