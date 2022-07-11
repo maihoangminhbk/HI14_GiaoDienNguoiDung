@@ -12,7 +12,9 @@ export { default as Chat } from './Chat';
 export { default as Notification } from './Notification';
 
 export { default as CreateWork } from './CreateWork';
+export { default as CreateReport } from './CreateReport';
 export { default as InputWork } from './InputWork';
+export { default as InputReport } from './InputReport';
 // eslint-disable-next-line import/no-cycle
 export { default as UserProfile } from './UserProfile';
 export { default as SparkLine } from './Charts/SparkLine';

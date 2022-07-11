@@ -4,7 +4,7 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, Context
 import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
 import { Header } from '../components';
 import { Button } from 'react-bootstrap';
-import { CreateWork } from '../components';
+import { CreateWork, CreateReport } from '../components';
 const TasksCreate = () => {
   const editing = { allowDeleting: true, allowEditing: true };
   // const [showAll, setShowAll] = useState(false);
@@ -13,6 +13,9 @@ const TasksCreate = () => {
       <Header category="Danh sách" title="Công việc đã tạo" />
       {<div>
       <p>Thêm công việc: <CreateWork /> </p>
+      </div>}
+      {<div>
+      <p>Thêm báo cáo: <CreateReport /> </p>
       </div>}
       <GridComponent
         id="gridcomp"
