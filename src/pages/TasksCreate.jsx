@@ -14,9 +14,6 @@ const TasksCreate = () => {
       {<div>
       <p>Thêm công việc: <CreateWork /> </p>
       </div>}
-      {<div>
-      <p>Thêm báo cáo: <CreateReport /> </p>
-      </div>}
       <GridComponent
         id="gridcomp"
         dataSource={ordersData}
