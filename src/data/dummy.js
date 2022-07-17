@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock, AiFillEdit, AiOutlineCheckSquare } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
@@ -505,6 +505,12 @@ export const manageLinks = [
         icon: <IoMdContacts />,
         title: 'Nhân viên',
       },
+
+      {
+        name: 'report',
+        icon: <AiFillEdit />,
+        title: 'Báo cáo',
+      },
       // {
       //   name: 'customers',
       //   icon: <RiContactsLine />,
@@ -595,7 +601,7 @@ export const employeeLinks = [
     links: [
       {
         name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        icon: <AiOutlineCheckSquare />,
         title: 'Chấm công',
       },
       // {
@@ -627,13 +633,19 @@ export const links = [
       },
       {
         name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        icon: <AiOutlineCheckSquare />,
         title: 'Chấm công',
       },
       {
         name: 'employees',
         icon: <IoMdContacts />,
         title: 'Nhân viên',
+      },
+
+      {
+        name: 'report',
+        icon: <AiFillEdit />,
+        title: 'Báo cáo',
       },
       // {
       //   name: 'customers',
