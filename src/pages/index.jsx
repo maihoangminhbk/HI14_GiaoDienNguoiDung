@@ -4,6 +4,7 @@ export { default as Orders } from './Orders';
 export { default as TasksCreate } from './TasksCreate';
 export { default as Employees } from './Employees';
 export { default as EmployeesKPI } from './EmployeesKPI';
+export { default as Report } from './Report';
 // export { default as Editor } from './Editor';
 export { default as Customers } from './Customers';
 // export { default as ColorPicker } from './ColorPicker';
