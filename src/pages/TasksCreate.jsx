@@ -40,18 +40,27 @@ const TasksCreate = () => {
   const ModalData = [
     {
       status: "Trong Tiến Trình",
-      auth: "Mai Hoàng Minh",
-      time: "1 ngày trước",
+      data: [
+        { name: "Mai Hoàng Minh", time: "3h ngày 22/07" },
+        { name: "Hoàng Ngọc Bảo", time: "6h ngày 21/07" },
+      ],
     },
     {
       status: "Hoàn Thành",
-      auth: "Trần Xuân Trường",
-      time: "3 ngày trước",
+      data: [
+        { name: "Trần Xuân Trường", time: "5h ngày 15/07" },
+        { name: "Trần Bảo Ngọc", time: "3h ngày 17/07" },
+      ],
     },
     {
       status: "Đã Giao",
-      auth: "Mai Hoàng Minh",
-      time: "2 ngày trước",
+      data: [
+        {
+          name: "Nguyễn Thuận Thiên",
+          time: "10h ngày 20/07",
+        },
+        { name: "Mai Hoàng Minh", time: "7h ngày 17/07" },
+      ],
     },
   ];
   const contentStyle = {
@@ -61,12 +70,25 @@ const TasksCreate = () => {
     marginBottom: "20px",
   };
   const contentLabelStyle = {
-    width: "180px",
+    width: "100px",
     textAlign: "left",
     fontWeight: "bold",
     marginRight: "5px",
   };
-  const [modalData, setModalData] = useState({});
+  const gridStyle = {
+    width: "100%",
+    display: "grid",
+    gridTemplateColumns: "40% 70%",
+    boxSizing: "border-box",
+    padding: "10px",
+  };
+  const [modalData, setModalData] = useState({
+    status: "Đang Tiến Hành",
+    data: [
+      { name: "Trần Xuân Trường", time: "5h ngày 15/07" },
+      { name: "Trần Bảo Ngọc", time: "3h ngày 17/07" },
+    ],
+  });
   // const [showAll, setShowAll] = useState(false);
   return (
     <div className='m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl'>
@@ -193,18 +215,24 @@ const TasksCreate = () => {
             </div>
             <span>{modalData.status}</span>
           </div>
-          <div style={contentStyle}>
-            <div style={contentLabelStyle}>
-              Người chấm công:{" "}
+          <div style={{
+            width: '100%',
+            border: '1px solid #888888'
+          }}>
+            <div style={gridStyle}>
+              <div>Công nhân</div>
+              <div>Thời gian làm</div>
             </div>
-            <span>{modalData.auth}</span>
+            {modalData.data.map((data, index) => {
+              return (
+                <div key={index} style={gridStyle}>
+                  <div>{data.name}</div>
+                  <div>{data.time}</div>
+                </div>
+              );
+            })}
           </div>
-          <div style={contentStyle}>
-            <div style={contentLabelStyle}>
-              Thời gian chấm công:{" "}
-            </div>
-            <span>{modalData.time}</span>
-          </div>
+          
           <button
             onClick={() => setIsOpenModal(false)}
             style={{
