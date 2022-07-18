@@ -103,13 +103,6 @@ const TasksCreate = () => {
           </p>
         </div>
       }
-      {
-        <div>
-          <p>
-            Thêm báo cáo: <CreateReport />{" "}
-          </p>
-        </div>
-      }
       <button
         style={{
           width: "130px",
